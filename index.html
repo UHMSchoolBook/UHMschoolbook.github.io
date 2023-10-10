@@ -1,139 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UHM SchoolBook</title>
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            display: flex;
         }
-        header {
+
+        .sidebar {
             background-color: #0074e4;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow-y: auto;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
+
         .website-title {
-            font-size: 24px;
+            font-size: 28px;
             color: white;
             margin: 0;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 2px solid white;
+            margin-bottom: 20px;
         }
+
         .header-image {
-            width: 200px; /* Adjust the image width as needed */
+            display: block;
+            margin: 10px auto 20px;
+            width: 250px;
+            border-radius: 10px;
         }
-        section {
-            background-color: #ffffff;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        h1 {
-            font-size: 24px;
-            color: #0074e4;
-        }
-        p {
-            color: #333333;
-        }
+
         .toc {
-            margin-left: 20px;
+            margin-top: 20px;
         }
+
         .toc a {
             display: block;
             margin-bottom: 5px;
             text-decoration: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .toc a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .main-content {
+            margin-left: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 24px;
             color: #0074e4;
+            border-bottom: 2px solid #0074e4;
+            padding-bottom: 10px;
+            margin-top: 20px;
         }
+
+        p {
+            color: #333333;
+        }
+
         .point-list {
-            list-style-type: disc; /* Use 'disc' for bullet points */
-            margin-left: 20px; /* Add left margin for indentation */
+            list-style-type: disc;
+            margin-left: 20px;
         }
+
         .point-list li {
-            margin-bottom: 10px; /* Add spacing between list items */
+            margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
-    <header>
+    <div class="sidebar">
         <img src="SchoolBook_LOGO.png" alt="Website Logo" class="header-image">
-        <h1 class="website-title">Organization Page</h1>
-    </header>
-    <div class="toc">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#motivation">Motivation</a></li>
-            <li><a href="#goals">Goals</a></li>
-            <li><a href="#usage">Usage</a></li>
-            <li><a href="#installation">Installation</a></li>
-            <li><a href="#development-status">Development Status</a></li>
-        </ul>
+        <h2 class="website-title">Organization Page</h2>
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#motivation">Motivation</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#development-status">Development Status</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+            </ul>
+        </div>
     </div>
-    <section id="motivation">
-        <h1>Motivation</h1>
-        <p>Whenever a new student start their journey in a university their first challange is to create connectivity with other students. Even older students face this issue in the form of new courses and clubs. The motivation behind this app is to decrease the gap between students in campus while allowing various socializing opprtunities designed specifically for the students of UHM.</p>
-    </section>
-    <section id="goals">
-        <h1>Goals</h1>
-        <p>The goal of the “Meet Your People!!” is to improve the connectivity  in student communities by providing a platform which is specifically designed for students especially for a particular campus. This app has options to interact as individuals, groups and member of classes with each other. There are Marketplace, House sharing and messaging modules to alleviate the college experience of every student.</p>
-    </section>
+    <div class="main-content">
+        <section id="motivation">
+            <h2>Motivation</h2>
+            <p>Whenever a new student starts their journey in a university, their first challenge is to create connectivity with other students. Even older students face this issue in the form of new courses and clubs. The motivation behind this app is to decrease the gap between students on campus while allowing various socializing opportunities designed specifically for the students of UHM.</p>
+        </section>
+        <section id="goals">
+            <h2>Goals</h2>
+            <p>The goal of the “Meet Your People!!” is to improve connectivity in student communities by providing a platform that is specifically designed for students, especially for a particular campus. This app has options to interact as individuals, groups, and members of classes with each other. There are Marketplace, House sharing, and messaging modules to alleviate the college experience of every student.</p>
+        </section>
     <section id="usage">
-        <h1>Usage</h1>
+        <h2>Usage</h2>
         <ul class="point-list">
             <li>
                 <p>Login Page</p>
+                <p>This page shows up at the start of the app and allows users to login into the app with their credentials.</p>
                 <img src="signin.png" alt="Image 1">
                 
             </li>
             <li>
                 <p>registration page</p>
-                <img src="image2.jpg" alt="Image 2">
+                <p>This page allows new users to create an account in the app so that they can get connected to their peers in the same courses and groups.</p>
+                <img src="registration.png" alt="Image 2" style="width: 287px; height: 562px;>
                 
             </li>
             <li>
                 <p>Feed page for Courses</p>
+                <p>This page shows feeds posted by courses including updates by instructor and other students.</p>
                 <img src="feed courses.png" alt="Image 2">
                 
             </li>
             <li>
-                <p>registration page for Clubs</p>
+                <p>Feed page for Clubs</p>
+                <p>This page shows feeds posted by clubs including updates by moderator and other students.</p>
                 <img src="feed clubs.png" alt="Image 2">
                 
             </li>
             <li>
                 <p>Marketplace page for Items</p>
+                <p>The marketplace page displays listing of items put to sale by different students</p>
                 <img src="Marketplace.png" alt="Image 2">
                 
             </li>
             <li>
                 <p>Housesharing</p>
+                <p>Housesharing allows students who want to share their rooms and house with other students for rent sharing the option to do so.</p>
                 <img src="House.png" alt="Image 2">
                 
             </li>
             <li>
                 <p>Live Activity</p>
+                <p>Students can share what they are doing at the moment (eg. songs, movie, book) with other students through this section.</p>
                 <img src="Live_activity.png" alt="Image 2" style="width: 287px; height: 562px;">
             </li>
             <li>
                 <p>Messages</p>
+                <p>This page allows students to send messages to each other in a secure way</p>
                 <img src="Messages.png" alt="Image 2" style="width: 287px; height: 562px;">
             </li>
         </ul>
     </section>
+    <section id="motivation">
+        <h2>DataModel</h2>
+        <img src="Data Model.png" style="width: 700px; height: 320px;">
+    </section>
     <section id="installation">
-        <h1>Installation</h1>
+        <h2>Installation</h2>
         <p>The app can be downloaded from this link:  <a href="https://github.com/UHMSchoolBook/App">App</a> and can be run using flutter run command.</p>
     </section>
     <section id="development-status">
-        <h1>Development Status</h1>
+        <h2>Development Status</h2>
         <p>Current development status can be accessed using this <a href="https://github.com/orgs/UHMSchoolBook/projects/1">Project Board Link</a> </p>
     </section>
-    <section id="about-us">
-        <h1>About Us</h1>
+    <section id="aboutus">
+        <h2>About Us</h2>
         <ul>
         <li>
             <p>Md Rahat Shahriar Zawad</p>
@@ -143,5 +192,6 @@
         </li>
     </ul>
     </section>
+    </div>
 </body>
 </html>
