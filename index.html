@@ -39,7 +39,7 @@
         .header-image {
             display: block;
             margin: 10px auto 20px;
-            width: 250px;
+            width: 250px; /* Adjusted size */
             border-radius: 10px;
         }
 
@@ -64,7 +64,7 @@
         .main-content {
             margin-left: 300px;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #0074e4;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 800px;
@@ -90,6 +90,29 @@
         .point-list li {
             margin-bottom: 10px;
         }
+
+        /* Updated styles for floating boxes */
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.726); /* Increased shadow */
+        }
+        .recent-updates {
+            background-color: rgb(255, 111, 0);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .recent-updates h3 {
+            font-size: 20px;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid white;
+        }
     </style>
 </head>
 
@@ -108,6 +131,10 @@
                 <li><a href="#development-status">Development Status</a></li>
                 <li><a href="#aboutus">About Us</a></li>
             </ul>
+        </div>
+        <div class="recent-updates">
+            <h3>Recent Updates !!!</h3>
+            <p><b>The App has been updated to use Riverpod for state management and also for access control to datamodels. New entities can now be added to the datamodels and old ones can be edited.</b></p>
         </div>
     </div>
     <div class="main-content">
@@ -144,24 +171,32 @@
                 <p><b>Feed page for Courses</b></p>
                 <p>This page shows feeds posted under courses including updates by instructor and other students.</p>
                 <img src="feed courses.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>Feed Posts can now be edited and new posts can be Added.</p>
+                <img src="feed courses edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
                 <p><b>Feed page for Clubs</b></p>
                 <p>This page shows feeds posted under clubs including updates by moderator and other students.</p>
                 <img src="feed clubs.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>Feed Posts can now be edited and new posts can be Added.</p>
+                <img src="feed courses edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
                 <p><b>Marketplace page for Items</b></p>
                 <p>The marketplace page displays listing of items put to sale by different students</p>
                 <img src="Marketplace.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>Items up for sale in marketplace can now be edited and new items can be Added.</p>
+                <img src="marketplace edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
                 <p><b>Housesharing</b></p>
                 <p>Housesharing allows students who want to share their rooms and house with other students for rent sharing the option to do so.</p>
                 <img src="House.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>Rooms up for ssharing can now be edited and new rooms can be Added.</p>
+                <img src="house edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
