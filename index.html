@@ -126,6 +126,7 @@
                 <li><a href="#motivation">Motivation</a></li>
                 <li><a href="#goals">Goals</a></li>
                 <li><a href="#usage">Usage</a></li>
+                <li><a href="#Firebase Intrigation">Firebase Intrigation</a></li>
                 <li><a href="#datamodel">DataModel</a></li>
                 <li><a href="#appstructure">App Strucutre</a></li>
                 <li><a href="#installation">Installation</a></li>
@@ -135,8 +136,8 @@
         </div>
         <div class="recent-updates">
             <h3>Recent Updates !!!</h3>
-            <h5>**Use emails from user_db to login.</h5>
-            <p><b><small> 10/30/2023: The App has been updated following the feature first structure for Flutter apps.</small></b></p>
+            <h5>Firebase intrigation Done!!!</h5>
+            <p><b><small> 11/18/2023: The app uses firebase as database now. Updates for Mock-up 5 has been completed.</small></b></p>
         </div>
     </div>
     <div class="main-content">
@@ -153,28 +154,39 @@
         <ul class="point-list">
             <li>
                 <p><b>Login Page</b></p>
-                <p>This page shows up at the start of the app and allows users to login into the app with their credentials.</p>
+                <p>This page shows up at the start of the app and allows users to login into the app with their credentials. It now uses Firebase for authentication.</p>
                 <img src="signin.png" alt="Image 1">
                 
             </li>
             <li>
-                <p><b>registration page</b></p>
-                <p>This page allows new users to create an account in the app so that they can get connected to their peers in the same courses and groups.</p>
-                <img src="registration.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p><b>Registration page</b></p>
+                <p>This page allows new users to create an account in the app so that they can get connected to their peers in the same courses and groups. Now all the data used to create an account is placed on Firebase. Email verification has not been added yet to ensure more testing before deployment.</p>
+                <img src="registrationpage.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
                 <p><b>Profile Page</b></p>
-                <p>This page shows the profile of the user after login including Bio, Courses and Clubs</p>
+                <p>This page shows the profile of the user after login including Bio, Courses student is attending this semester and Clubs they are members of.</p>
                 <img src="Profile.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
+                <p><b>Courses Description Page</b></p>
+                <p>Clicking on the courses in the profile page now takes student to course description were the description of the course is shown. It also shows the other students taking the course.</p>
+                <img src="CourseDescription.png" alt="Image 2" style="width: 287px; height: 562px;">
+                
+            </li>
+            <li>
+                <p><b>Groups Description Page</b></p>
+                <p>Clicking on the courses in the profile page now takes student to course description were the description of the Group is shown. It also shows the other students who are members of the group.</p>
+                <img src="GroupsDescription.png" alt="Image 2" style="width: 287px; height: 562px;">
+            </li>
+            <li>
                 <p><b>Feed page for Courses</b></p>
                 <p>This page shows feeds posted under courses including updates by instructor and other students.</p>
-                <img src="feed courses.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <img src="Coursefeed.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <p>Feed Posts can now be edited and new posts can be Added.</p>
-                <img src="Feed courses edit.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <img src="Coursefeededit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <img src="feed edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <img src="add feed.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
@@ -191,10 +203,9 @@
             </li>
             <li>
                 <p><b>Marketplace page for Items</b></p>
-                <p>The marketplace page displays listing of items put to sale by different students</p>
+                <p>The marketplace page displays listing of items put to sale by different students.</p>
                 <img src="Marketplace.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <p>Items up for sale in marketplace can now be edited and new items can be Added.</p>
-                <img src="marketplace edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <img src="market edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <img src="market add.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
@@ -202,24 +213,37 @@
             <li>
                 <p><b>Housesharing</b></p>
                 <p>Housesharing allows students who want to share their rooms and house with other students for rent sharing the option to do so.</p>
-                <img src="House.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <img src="housesharing.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <p>Rooms up for ssharing can now be edited and new rooms can be Added.</p>
-                <img src="houseshare edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <img src="house edit.png" alt="Image 2" style="width: 287px; height: 562px;">
                 <img src="house add.png" alt="Image 2" style="width: 287px; height: 562px;">
                 
             </li>
             <li>
-                <p><b>Live Activity</b></p>
-                <p>Students can share what they are doing at the moment (eg. songs, movie, book) with other students through this section.</p>
-                <img src="Live_activity.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p><b>Events Page</b></p>
+                <p>An Events Page has been created so that Students can post differents events up there for other students to know.</p>
+                <img src="eventspage.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>New events can be added to the events page that appear throughout the calendars of all the students. The existing events can be edited and deleted by the events creator only</p>
+                <img src="addeventpage.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <img src="editeventpage.png" alt="Image 2" style="width: 287px; height: 562px;">
             </li>
             <li>
                 <p><b>Messages</b></p>
-                <p>This page allows students to send messages to each other in a secure way</p>
-                <img src="Messages.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>The messages section now uses Firebase Realtime Messaging API to send and recive messages. Students can search each other form the search bar and send messages.</p>
+                <img src="searchchat.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <img src="ChatScreen.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <p>Plder Chats also appears in the messages section.</p>
+                <img src="chats.png" alt="Image 2" style="width: 287px; height: 562px;">
+                <img src="Ongoing Chat.png" alt="Image 2" style="width: 287px; height: 562px;">
             </li>
         </ul>
+    </section>
+    <section id="Firebase Intrigation">
+        <h2>Firebase Intrigation</h2>
+        <p>The App has Firebase Intrigation now to ensure data storage and authetication.</p>
+        <img src="Firebase Console.png" style="width: 700px; height: 350px;">
+        <img src="firebase.png" style="width: 700px; height: 350px;">
+    </section>
     </section>
     <section id="appstructure">
         <h2>App Structure</h2>
