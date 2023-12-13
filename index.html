@@ -39,7 +39,8 @@
         .header-image {
             display: block;
             margin: 10px auto 20px;
-            width: 250px; /* Adjusted size */
+            width: 250px;
+            /* Adjusted size */
             border-radius: 10px;
         }
 
@@ -97,8 +98,10 @@
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.726); /* Increased shadow */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.726);
+            /* Increased shadow */
         }
+
         .recent-updates {
             background-color: rgb(255, 111, 0);
             color: white;
@@ -130,152 +133,240 @@
                 <li><a href="#datamodel">DataModel</a></li>
                 <li><a href="#installation">Installation</a></li>
                 <li><a href="#development-status">Development Status</a></li>
-                <li><a href="evaluation.html">Usability Evaluation Test Report</a></li>
+                <li><a href="#Usability">Usability Evaluation Test Report</a></li>
                 <li><a href="#aboutus">About Us</a></li>
             </ul>
         </div>
         <div class="recent-updates">
             <h3>Recent Updates !!!</h3>
-            <h5>Firebase intrigation Done!!!</h5>
-            <p><b><small> 12/6/2023: Initial Usability evaluation for the app has been done. Report available <a href="evaluation.html">Usability Evaluation Test Design</a></small></b></p>
+            <h5>TWO of the Top 3 Issues found from Usability Test Has been solved!!!</h5>
+            <p><b><small> 12/6/2023: Initial Usability evaluation for the app has been done. Report available <a
+                            href="evaluation.html">Usability Evaluation Test Design</a></small></b></p>
         </div>
     </div>
     <div class="main-content">
         <section id="motivation">
             <h2>Motivation</h2>
-            <p>Whenever a new student starts their journey in a university, their first challenge is to create connectivity with other students. Even older students face this issue in the form of new courses and clubs. The motivation behind this app is to decrease the gap between students on campus while allowing various socializing opportunities designed specifically for the students of UHM.</p>
+            <p>Whenever a new student starts their journey in a university, their first challenge is to create
+                connectivity with other students. Even older students face this issue in the form of new courses and
+                clubs. The motivation behind this app is to decrease the gap between students on campus while allowing
+                various socializing opportunities designed specifically for the students of UHM.</p>
         </section>
         <section id="goals">
             <h2>Goals</h2>
-            <p>The goal of the “UHM-SchoolBook!!” is to improve connectivity in student communities by providing a platform that is specifically designed for students, especially for a particular campus. This app has options to interact as individuals, groups, and members of classes with each other. There are Marketplace, House sharing, and messaging modules to alleviate the college experience of every student.</p>
+            <p>The goal of the “UHM-SchoolBook!!” is to improve connectivity in student communities by providing a
+                platform that is specifically designed for students, especially for a particular campus. This app has
+                options to interact as individuals, groups, and members of classes with each other. There are
+                Marketplace, House sharing, and messaging modules to alleviate the college experience of every student.
+            </p>
         </section>
-    <section id="usage">
-        <h2>Usage</h2>
-        <ul class="point-list">
-            <li>
-                <p><b>Login Page</b></p>
-                <p>This page shows up at the start of the app and allows users to login into the app with their credentials. It now uses Firebase for authentication.</p>
-                <img src="signin.png" alt="Image 1">
-                
-            </li>
-            <li>
-                <p><b>Registration page</b></p>
-                <p>This page allows new users to create an account in the app so that they can get connected to their peers in the same courses and groups. Now all the data used to create an account is placed on Firebase. Email verification has not been added yet to ensure more testing before deployment.</p>
-                <img src="registrationpage.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Profile Page</b></p>
-                <p>This page shows the profile of the user after login including Bio, Courses student is attending this semester and Clubs they are members of.</p>
-                <img src="Profile.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Courses Description Page</b></p>
-                <p>Clicking on the courses in the profile page now takes student to course description were the description of the course is shown. It also shows the other students taking the course.</p>
-                <img src="CourseDescription.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Groups Description Page</b></p>
-                <p>Clicking on the courses in the profile page now takes student to course description were the description of the Group is shown. It also shows the other students who are members of the group.</p>
-                <img src="GroupsDescription.png" alt="Image 2" style="width: 287px; height: 562px;">
-            </li>
-            <li>
-                <p><b>Feed page for Courses</b></p>
-                <p>This page shows feeds posted under courses including updates by instructor and other students.</p>
-                <img src="Coursefeed.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <p>Feed Posts can now be edited and new posts can be Added.</p>
-                <img src="Coursefeededit.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="feed edit.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="add feed.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Feed page for Clubs</b></p>
-                <p>This page shows feeds posted under clubs including updates by moderator and other students.</p>
-                <img src="feed clubs.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <p>Feed Posts can now be edited and new posts can be Added.</p>
-                <img src="feed clubs edit.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="add cfeed.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="edit cfeed.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Marketplace page for Items</b></p>
-                <p>The marketplace page displays listing of items put to sale by different students.</p>
-                <img src="Marketplace.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <p>Items up for sale in marketplace can now be edited and new items can be Added.</p>
-                <img src="market edit.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="market add.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Housesharing</b></p>
-                <p>Housesharing allows students who want to share their rooms and house with other students for rent sharing the option to do so.</p>
-                <img src="housesharing.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <p>Rooms up for ssharing can now be edited and new rooms can be Added.</p>
-                <img src="house edit.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="house add.png" alt="Image 2" style="width: 287px; height: 562px;">
-                
-            </li>
-            <li>
-                <p><b>Events Page</b></p>
-                <p>An Events Page has been created so that Students can post differents events up there for other students to know.</p>
-                <img src="eventspage.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <p>New events can be added to the events page that appear throughout the calendars of all the students. The existing events can be edited and deleted by the events creator only</p>
-                <img src="addeventpage.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="editeventpage.png" alt="Image 2" style="width: 287px; height: 562px;">
-            </li>
-            <li>
-                <p><b>Messages</b></p>
-                <p>The messages section now uses Firebase Realtime Messaging API to send and recive messages. Students can search each other form the search bar and send messages.</p>
-                <img src="searchchat.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="ChatScreen.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <p>Plder Chats also appears in the messages section.</p>
-                <img src="chats.png" alt="Image 2" style="width: 287px; height: 562px;">
-                <img src="Ongoing Chat.png" alt="Image 2" style="width: 287px; height: 562px;">
-            </li>
-        </ul>
-    </section>
-    <section id="Firebase Intrigation">
-        <h2>Firebase Intrigation</h2>
-        <p>The App has Firebase Intrigation now to ensure data storage and authetication.</p>
-        <img src="Firebase Console.png" style="width: 700px; height: 350px;">
-        <img src="firebase.png" style="width: 700px; height: 350px;">
-    </section>
-    </section>
-    <section id="datamodel">
-        <h2>DataModel</h2>
-        <img src="datamodel.png" style="width: 700px; height: 320px;">
-    </section>
-    <section id="installation">
-        <h2>Installation</h2>
-        <p>The app can be downloaded from this link:  <a href="https://github.com/UHMSchoolBook/App">App</a> and can be run using <b>flutter run</b> command.</p>
-    </section>
-    <section id="development-status">
-        <h2>Development Status</h2>
-        <p>Current development status can be accessed using this <a href="https://github.com/orgs/UHMSchoolBook/projects/1">Project Board Link</a> </p>
-    </section>
-    <section id="">
-        <h2>Usability Evaluation Test Report</h2>
-        Initial Usability evaluation for the app has been done. Report available <a href="evaluation.html">Usability Evaluation Test Design</a>
-    </section>
-    <section id="aboutus">
-        <h2>About Us</h2>
-        <ul>
-        <li>
-            <p><b>Md Rahat Shahriar Zawad</b></p>
-            <img src="https://hawaiidigitalhealthlab.com/content/images/size/w1140/2023/10/Md-Rahat-Shahriar-Zawad.jpeg" alt="Image 2" style="width: 200px; height: 200px;">
-            <p>Hello! My name is Rahat. I graduated in Information and Communication Engineering from Bangladesh, and it's my 1st semester as a Master's student at UHM. My research interest is federated learning and its use in healthcare sector.</p>
-        </li>
-        <li>
-            <p><b>Armin Soltan</b></p>
-            <img src="https://hawaiidigitalhealthlab.com/content/images/2023/06/armin.jpeg" alt="Image 2" style="width: 200px; height: 200px;">
-            <p>My name is Armin Soltan. I graduated in computer Science from University of Tehran in Iran. I am 2nd year MS student in ICS. My research interest is Optimization theory and how to mitigate unfairness. I am really interested to learn flutter and mobile development as well. I love playing volleyball.</p>
-        </li>
-    </ul>
-    </section>
+        <section id="usage">
+            <h2>Usage</h2>
+            <ul class="point-list">
+                <li>
+                    <p><b>Login Page</b></p>
+                    <p>This page shows up at the start of the app and allows users to login into the app with their
+                        credentials. It now uses Firebase for authentication.</p>
+                    <img src="signin.png" alt="Image 1">
+
+                </li>
+                <li>
+                    <p><b>Registration page</b></p>
+                    <p>This page allows new users to create an account in the app so that they can get connected to
+                        their peers in the same courses and groups. Now all the data used to create an account is placed
+                        on Firebase. Email verification has not been added yet to ensure more testing.
+                    </p>
+                    <img src="registrationpage.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Profile Page</b></p>
+                    <p>This page shows the profile of the user after login including Bio, Courses student is attending
+                        this semester and Clubs they are members of. There is a new button added in the Groups section
+                        that alows users to add new groups to their.</p>
+                    <img src="Profilepage.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Courses Description Page</b></p>
+                    <p>Clicking on the courses in the profile page now takes student to course description were the
+                        description of the course is shown. It also shows the other students taking the course.</p>
+                    <img src="CourseDescription.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Groups Description Page</b></p>
+                    <p>Clicking on the Groups in the profile page now takes student to Groups description were the
+                        description of the Group is shown. It also shows the other students who are members of the
+                        group. Now, students can click on leave group to leave the group.</p>
+                    <img src="GroupsProfile.png" alt="Image 2" style="width: 287px; height: 562px;">
+                </li>
+                <li>
+                    <p><b>Joining Groups</b></p>
+                    <p> Now, There is option for students to search and jon new groups. When they click on the add group
+                        button on the profile page it opens a search option where they can search for a goup and from
+                        the description page they can choose to join the group.</p>
+                    <img src="SearchGroups.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="Join.png" alt="Image 2" style="width: 287px; height: 562px;">
+                </li>
+                <li>
+                    <p><b>Feed page for Courses</b></p>
+                    <p>This page shows feeds posted under courses including updates by instructor and other students.
+                    </p>
+                    <img src="Coursefeed.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <p>Feed Posts can now be edited and new posts can be Added.</p>
+                    <img src="Coursefeededit.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="feed edit.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="add feed.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Feed page for Clubs</b></p>
+                    <p>This page shows feeds posted under clubs including updates by moderator and other students.</p>
+                    <img src="feed clubs.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <p>Feed Posts can now be edited and new posts can be Added.</p>
+                    <img src="feed clubs edit.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="add cfeed.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="edit cfeed.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Marketplace page for Items</b></p>
+                    <p>The marketplace page displays listing of items put to sale by different students. Now, There is
+                        options to massege the poster of the item from the marketplace page. When clicked the send
+                        message button, it opens up a chat screen with the poster of the item on the messaging option.
+                    </p>
+                    <img src="marketplaceNew.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <p>Items up for sale in marketplace can now be edited and new items can be Added.</p>
+                    <img src="market edit.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="market add.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Housesharing</b></p>
+                    <p>Housesharing allows students who want to share their rooms and house with other students for rent
+                        sharing the option to do so. Now, There is options to massege the poster of the item from the
+                        housesharing page. When clicked the send message button, it opens up a chat screen with the
+                        poster of the item on the messaging option.</p>
+                    <img src="housesharingnew.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <p>Rooms up for sharing can now be edited and new rooms can be Added.</p>
+                    <img src="house edit.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="house add.png" alt="Image 2" style="width: 287px; height: 562px;">
+
+                </li>
+                <li>
+                    <p><b>Events Page</b></p>
+                    <p>An Events Page has been created so that Students can post differents events up there for other
+                        students to know.</p>
+                    <img src="eventspage.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <p>New events can be added to the events page that appear throughout the calendars of all the
+                        students. The existing events can be edited and deleted by the events creator only</p>
+                    <img src="addeventpage.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="editeventpage.png" alt="Image 2" style="width: 287px; height: 562px;">
+                </li>
+                <li>
+                    <p><b>Messages</b></p>
+                    <p>The messages section now uses Firebase Realtime Messaging API to send and recive messages.
+                        Students can search each other form the search bar and send messages.</p>
+                    <img src="searchchat.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="ChatScreen.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <p>Plder Chats also appears in the messages section.</p>
+                    <img src="chats.png" alt="Image 2" style="width: 287px; height: 562px;">
+                    <img src="Ongoing Chat.png" alt="Image 2" style="width: 287px; height: 562px;">
+                </li>
+            </ul>
+        </section>
+        <section id="Firebase Intrigation">
+            <h2>Firebase Intrigation</h2>
+            <p>The App has Firebase Intrigation now to ensure data storage and authetication.</p>
+            <img src="Firebase Console.png" style="width: 700px; height: 350px;">
+            <img src="firebase.png" style="width: 700px; height: 350px;">
+        </section>
+        </section>
+        <section id="datamodel">
+            <h2>DataModel</h2>
+            <img src="datamodel.png" style="width: 700px; height: 320px;">
+        </section>
+        <section id="Deployment">
+            <h2>Deployment</h2>
+            <p>The app has been deployed using Firestore App Distribution for Testing. If you are interested in testing
+                the app please get in touch with one of the developers of the app and they will send you an invitation
+                to be a tester of the app with instuctions for downloading it.</p>
+                <h5>Emails: <ul><li>zawad@hawaii.edu</li><li>asoltan@hawaii.edu</li></ul></h5>
+            <img src="Appdistribution.png" style="width: 700px; height: 350px;">
+        </section>
+        <section id="installation">
+            <h2>Installation (For Using in Android Studio or any Emulator)</h2>
+            <p>The app can be downloaded from this link: <a href="https://github.com/UHMSchoolBook/App">App</a> and can
+                be run using <b>flutter run</b> command.</p>
+        </section>
+        <section id="development-status">
+            <h2>Development Status</h2>
+            <p>Current development status can be accessed using this <a
+                    href="https://github.com/orgs/UHMSchoolBook/projects/1">Project Board Link</a> </p>
+        </section>
+        <section id="Usability">
+            <h2>Usability Evaluation Test Report</h2>
+            Initial Usability evaluation for the app has been done. Report available <a href="evaluation.html">Usability
+                Evaluation Test Design</a>
+            <p>
+            <h2>Top 3 Usability Issues found from the Test were:</h2>
+            <ol>
+                <li><h4>Lack of Group search option: (The Issue has been Solved in the latest Version)</h4> There is no option to search and add groups in the current
+                    implementation.
+                    <a href="https://github.com/UHMSchoolBook/App/issues/66" target="_blank"
+                        rel="noopener noreferrer">Issue Link on Project Board</a>
+                </li>
+                <li><h4>Missing Message option in Marketplace: (The Issue has been Solved in the latest Version) </h4> There is no way to message the poster of an item up for sale
+                    in the current version. But users can search by the poster's name in the messaging section to
+                    contact them.
+                    <a href="https://github.com/UHMSchoolBook/App/issues/67" target="_blank"
+                        rel="noopener noreferrer">Issue Link on Project Board</a>
+                </li>
+                <li><h4>Messaging doesn’t appear for new users: </h4>When a new user signs in into the app for the first time
+                    they can't see the messaging option. It fixes on its own when they log out and log in again.
+                    <a href="https://github.com/UHMSchoolBook/App/issues/68" target="_blank"
+                        rel="noopener noreferrer">Issue Link on Project Board</a>
+                </li>
+            </ol>
+            </p>
+        </section>
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <ul>
+                <li>
+                    <p><b>Md Rahat Shahriar Zawad </b><a href="https://www.linkedin.com/in/rahat-shahriar-zawad/"
+                            target="_blank" rel="noopener noreferrer"> LinkedIn</a></p>
+                    <img src="https://hawaiidigitalhealthlab.com/content/images/size/w1140/2023/10/Md-Rahat-Shahriar-Zawad.jpeg"
+                        alt="Image 2" style="width: 200px; height: 200px;">
+                    <p>Hello! My name is Rahat. I graduated in Information and Communication Engineering from
+                        Bangladesh, and it's my 1st semester as a Master's student at UHM. My research interest is
+                        federated learning and its use in healthcare sector.</p>
+                    <p> In this project I implmented the Student Profile Page, Feeds section, Events section and
+                        Marketplace section. The student Profile page shows all the informations and courses, Groups for
+                        the student. There is option to search and add new groups there. Users can post updates about
+                        classes and groups in feed section and also create new events that ae shared to all staudents in
+                        the events section. Finally, in marketplace there is option to post items for sale and rooms for
+                        sharing. All this options use firebase as the data storage.</p>
+                </li>
+                <li>
+                    <p><b>Armin Soltan </b><a href="https://www.linkedin.com/in/armin-soltan-5a5696100/" target="_blank"
+                            rel="noopener noreferrer"> LinkedIn</a></p>
+                    <img src="https://hawaiidigitalhealthlab.com/content/images/2023/06/armin.jpeg" alt="Image 2"
+                        style="width: 200px; height: 200px;">
+
+                    <p>My name is Armin Soltan. I graduated in computer Science from University of Tehran in Iran. I am
+                        2nd year MS student in ICS. My research interest is Optimization theory and how to mitigate
+                        unfairness. I am really interested to learn flutter and mobile development as well. I love
+                        playing volleyball.</p>
+                    <p>In this project I implemented the registration page that users can sign up, I implemented the
+                        course section that all the courses can be displayed for the students and also I implemented the
+                        messages features that students can search specific student in search bar send messages, images,
+                        receiving notification and see all other students in messages page.</p>
+                </li>
+            </ul>
+        </section>
     </div>
 </body>
+
 </html>
